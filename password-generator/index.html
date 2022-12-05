@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script defer src="script.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Password Generator</title>
+  </head>
+  <body>
+    <div class="container">
+      <h3>Password Generator</h3>
+      <div class="result">
+        <i class="fa-solid fa-clipboard"></i>
+      </div>
+      <div class="inputs">
+        <div class="inp">
+          <label for="length">Password Length</label>
+          <input
+            type="number"
+            min="6"
+            max="20"
+            step="1"
+            value="6"
+            name="length"
+            id="length"
+          />
+        </div>
+        <div class="inp">
+          <label for="uppercase">Include uppercase letters</label>
+          <input
+            type="checkbox"
+            checked="true"
+            name="uppercase"
+            id="uppercase"
+          />
+        </div>
+        <div class="inp">
+          <label for="lowercase">Include lowercase letters</label>
+          <input
+            type="checkbox"
+            checked="true"
+            name="lowercase"
+            id="lowercase"
+          />
+        </div>
+        <div class="inp">
+          <label for="numbers">Include numbers</label>
+          <input type="checkbox" checked="true" name="numbers" id="numbers" />
+        </div>
+        <div class="inp">
+          <label for="symbols">Include symbols</label>
+          <input type="checkbox" checked="true" name="symbols" id="symbols" />
+        </div>
+      </div>
+      <button class="password-generate">Generate Password</button>
+    </div>
+    <div class="toster"></div>
+  </body>
+</html>

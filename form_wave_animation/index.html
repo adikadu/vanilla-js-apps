@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script defer src="script.js"></script>
+    <!-- <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    /> -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Form Wave Animation</title>
+  </head>
+  <body>
+    <div class="container">
+      <h2>Please Login</h2>
+      <form action="">
+        <div class="box--abs">
+          <input id="email" type="text" required />
+          <!-- <label for="email">Email</label> -->
+          <label for="email"
+            ><span style="transition-delay: 0ms">E</span
+            ><span style="transition-delay: 50ms">m</span
+            ><span style="transition-delay: 100ms">a</span
+            ><span style="transition-delay: 150ms">i</span
+            ><span style="transition-delay: 200ms">l</span>
+          </label>
+        </div>
+        <div class="box--abs">
+          <input type="password" name="password" id="password" required />
+          <label for="password"
+            ><span style="transition-delay: 0ms">p</span
+            ><span style="transition-delay: 50ms">a</span
+            ><span style="transition-delay: 100ms">s</span
+            ><span style="transition-delay: 150ms">s</span
+            ><span style="transition-delay: 200ms">w</span
+            ><span style="transition-delay: 250ms">o</span
+            ><span style="transition-delay: 300ms">r</span
+            ><span style="transition-delay: 350ms">d</span>
+          </label>
+        </div>
+        <button>Login</button>
+        <p>Don't have an account? <a class="register" href="#">Register</a></p>
+      </form>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,191 @@
+/*
+--- 01 TYPOGRAPHY SYSTEM
+
+- Font sizes (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+- Font weights
+Default: 400
+Medium: 500
+Semi-bold: 600
+Bold: 700
+
+- Line heights
+Default: 1
+Small: 1.05
+Medium: 1.2
+Paragraph default: 1.6
+
+- Letter spacing
+-0.5px
+0.75px
+
+--- 02 COLORS
+
+- Primary:
+- Tints:
+
+- Shades: 
+
+- Accents:
+- Greys
+
+
+--- 05 SHADOWS
+
+0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
+
+--- 06 BORDER-RADIUS
+
+Default: 9px
+Medium: 11px
+
+--- 07 WHITESPACE
+
+- Spacing system (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  /* 1rem = 10px */
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  background-color: #3b3b98;
+  color: #fff;
+  overflow: hidden;
+  position: relative;
+}
+
+.container {
+  padding: 2rem 4rem;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.result {
+  width: 100%;
+  height: 4rem;
+  background-color: rgba(0, 0, 0, 0.4);
+  margin-bottom: 2rem;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0 1rem;
+}
+
+.result i {
+  position: absolute;
+  right: 0.5rem;
+  top: 0.5rem;
+  font-size: 3rem;
+  color: #3b3b98;
+}
+
+.result i:active {
+  color: #fff;
+}
+
+.result .copy-msg {
+  position: absolute;
+  right: -1rem;
+  top: -1.8rem;
+  font-size: 1.2rem;
+  padding: 0.3rem;
+  border-radius: 2px;
+  background-color: #fff;
+  color: black;
+}
+
+.result p {
+  font-size: 1.8rem;
+}
+
+.container h3 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.inputs label {
+  font-size: 1.6rem;
+  /* margin-right: 14rem; */
+}
+
+input[type="number"] {
+  border: none;
+  padding: 0.3rem;
+  width: 5rem;
+  /* cursor: pointer; */
+}
+
+input[type="checkbox"] {
+  accent-color: blue;
+  /* border: none;
+  cursor: pointer;
+  padding: 0.3rem;
+  background-color: blue; */
+}
+
+.inp {
+  position: relative;
+  margin-bottom: 1.2rem;
+}
+
+.inp input {
+  position: absolute;
+  right: 0;
+}
+
+.password-generate {
+  width: 100%;
+  border: none;
+  padding: 1.2rem 2.4rem;
+  font-size: 2rem;
+  background-color: rgba(59, 59, 152, 0.623);
+  color: inherit;
+  margin-top: 3rem;
+}
+
+.password-generate:hover {
+  background-color: #3b3b98;
+}
+
+.password-generate:active {
+  transform: scale(0.98);
+}
+
+.toster {
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+}
+
+.toster p {
+  padding: 1rem 2rem;
+  margin-bottom: 1.2rem;
+  background-color: #fff;
+  color: red;
+  font-size: 1.6rem;
+  font-weight: bold;
+  border-radius: 11px;
+  animation: fade 1s linear;
+}
+
+@keyframes fade {
+  to {
+    opacity: 0;
+  }
+}
